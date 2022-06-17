@@ -1,0 +1,30 @@
+.clients__list{
+    display:flex;
+    }
+    .clients__item{
+    margin-right: 30px;
+    
+    &:last-child{
+        margin: 0;
+    }}
+    .clients__link{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        border:1px solid var(--main-border-color) ;
+        border-radius: 4px;
+        fill: var(--main-border-color);
+        transition-property: fill, border-color;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--timing-function);
+    
+    &:hover{
+       border-color: var(--accent);
+        fill: var(--accent);
+    }
+    &:focus{
+       border-color: var(--accent);
+        fill: var(--accent);
+    }}

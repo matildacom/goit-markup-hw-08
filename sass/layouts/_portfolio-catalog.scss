@@ -1,0 +1,111 @@
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.catalog__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.catalog__item{
+    margin-right: 8px;
+
+&:last-child{
+    margin-right: 0;
+}}
+
+.portfolio__subtitle{
+    font-size: 18px;
+    line-height:2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+}
+.portfolio__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.portfolio__item{
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+
+&:nth-child(3n){
+    margin-right: 0;
+}}
+
+.portfolio__card{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    color: var(--text-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--timing-function);
+    transform: translateY(101%);
+}
+.portfolio-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    opacity: 0;
+    transition:opacity, transform ;
+}
+
+.portfolio__link{
+    text-decoration: none;
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--timing-function);
+
+&:hover .portfolio-text {
+    opacity: 1;
+}
+&:focus .portfolio-text{
+    opacity: 1;
+}
+
+&:hover .overlay {
+    transform: translateY(0);
+    transition: transform var(--transition-duration);
+}
+&:focus .overlay {
+    transform: translateY(0);
+    transition: transform var(--transition-duration);
+}
+&:hover,
+&:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+.portfolio__content{
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.portfolio__box{
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--secondary-border-color);
+    border-right:1px solid var(--secondary-border-color) ;
+    border-left:1px solid var(--secondary-border-color) ;
+}

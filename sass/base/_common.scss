@@ -1,0 +1,30 @@
+.page{
+    background-color: #FFFFFF;
+    font-family: Roboto,sans-serif;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.work-section{
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+.title{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-text-color);
+}
+
+
+.submit-title{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
