@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./images/symbol-defs.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="page">
@@ -29,36 +29,63 @@
           >Web<span class="header__colortext">Studio</span></a
         >
         <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="" class="navigation__link current">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link">Портфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">Контакты</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-toggle is-open"
+            aria-expanded="false"
+            data-mobile-menu__button
+          >
+            <svg
+              class="menu__icon"
+              width="40"
+              height="40"
+              aria-label="переключатель меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" data-menu>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="" class="navigation__link current">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a href="" class="contacts__link">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="" class="contacts__link">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-phone1"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="" class="contacts__link">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="" class="contacts__link">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-phone1"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -511,7 +538,9 @@
               <ul class="address__list">
                 <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
                 <li class="address__item">
-                  <a href="" class="address__link" lang="en">info@example.com</a>
+                  <a href="" class="address__link" lang="en"
+                    >info@example.com</a
+                  >
                 </li>
                 <li class="address__item">
                   <a href="" class="address__link">+38 099 111 11 11</a>
@@ -668,5 +697,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/menu.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 .header{
     background-color: var(--text-color);
     border-bottom: 1px solid var(--border-color);
+    position: relative;
 }
 .navigation__list{
     display: flex;
