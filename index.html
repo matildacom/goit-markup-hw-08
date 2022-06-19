@@ -22,74 +22,93 @@
   </head>
 
   <body class="page">
+
+    <!--header--
     <header class="header">
       <div class="container header__container">
-        <!--logo-->
+        <!--logo--
         <a href="" lang="en" class="header__logo"
           >Web<span class="header__colortext">Studio</span></a
         >
         <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link current">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
           <button
-            type="button"
-            class="menu-toggle is-open"
-            aria-expanded="false"
-            data-mobile-menu__button
+          type="button"
+          class="menu-toggle is-open"
+          aria-expanded="false"
+          data-mobile-menu__button
+        >
+          <svg
+            class="menu__icon"
+            width="40"
+            height="40"
+            aria-label="переключатель меню"
           >
-            <svg
-              class="menu__icon"
-              width="40"
-              height="40"
-              aria-label="переключатель меню"
-            >
-              <use
-                class="icon-menu"
-                href="./images/symbol-defs.svg#icon-menu"
-              ></use>
-              <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-cross"
-              ></use>
-            </svg>
-          </button>
-          <div class="menu-container is-open" data-menu>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="" class="navigation__link current">Студия</a>
-              </li>
-              <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a href="" class="navigation__link">Контакты</a>
-              </li>
-            </ul>
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container is-open" data-menu>
+          <ul class="menu__nav">
+            <li>Студия</li>
+            <li>Портфолио</li>
+            <li>Контакты</li>
+          </ul>
+          <ul class="menu__contacts">
+            <li>+38 096 111 11 11</li>
+            <li>info@devstudio.com</li>
+          </ul>
+          <ul class="menu__socials">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>LinkedIn</li>
+          </ul>
 
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a href="" class="contacts__link">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a href="" class="contacts__link">
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/symbol-defs.svg#icon-phone1"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
           </div>
-        </nav>
-      </div>
+        
+      </nav>
+
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a href="" class="contacts__link">
+            <svg class="contacts__icon" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="contacts__item">
+          <a href="" class="contacts__link">
+            <svg class="contacts__icon" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-phone1"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
     </header>
     <main>
-      <!--hero-->
+      <!--hero--
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -98,7 +117,7 @@
           </button>
         </div>
       </section>
-      <!--features-->
+      <!--features--
       <section class="features section">
         <div class="container">
           <h2 hidden class="features__title--hidden">особенности</h2>
@@ -158,7 +177,7 @@
           </ul>
         </div>
       </section>
-      <!--work-->
+      <!--work--
       <section class="work-section">
         <div class="container">
           <h2 class="title work__title">Чем мы занимаемся</h2>
@@ -196,7 +215,7 @@
           </ul>
         </div>
       </section>
-      <!--team-->
+      <!--team--
       <section class="team section">
         <div class="container">
           <h2 class="title team__title">Наша команда</h2>
@@ -470,7 +489,7 @@
           </ul>
         </div>
       </section>
-      <!--clients-->
+      <!--clients--
       <section class="clients section">
         <div class="container">
           <h2 class="title clients__title">Постоянные клиенты</h2>
@@ -526,14 +545,19 @@
         </div>
       </section>
     </main>
+
+    <!--footer-->
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
+ 
+          <div class="footer-tab-container">
+           
           <div class="address-box">
             <!--logo-->
-            <a href="" class="footer__logo"
-              >Web<span class="footer__colortext">Studio</span></a
-            >
+ <a href="" class="footer__logo"
+ >Web<span class="footer__colortext">Studio</span></a
+>
             <address class="address">
               <ul class="address__list">
                 <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
@@ -601,6 +625,8 @@
               </li>
             </ul>
           </div>
+        </div>
+          
 
           <div class="submit">
             <strong class="submit-title">Подпишитесь на рассылку</strong>
@@ -624,6 +650,8 @@
         </div>
       </div>
     </footer>
+
+    <!--backdrop--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>

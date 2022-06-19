@@ -4,29 +4,36 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    
+    @media screen and (min-width:768px) {
+        display: none;
+    }
     }
     .menu-toggle .icon-cross{
         display: none;
     }
     .menu-toggle.is-open .icon-cross{
         display: block;
+        width: 18.67px;
+        height: 18.67px;
     }
     .menu-toggle.is-open .icon-menu{
         display: none;
     }
 
     .menu-container{
-        display: none;
-         position: absolute;
-       top: 100%;
-       left: 0;
-       width:100%;
-       height: 400px;
-       background-color: var(--text-color);
+        background-color: var(--text-color);
         padding: 20px;
         text-align: center;
-
+        width: 100%;
         &.is-open {
             display: block;
         }
-    }
+        @media screen and (max-width:767px) {
+        display: none;
+        
+        }
+        @media screen and (min-width:768px) {
+            display:none;   
+        }}
+        
