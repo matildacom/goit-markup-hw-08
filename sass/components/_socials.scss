@@ -31,13 +31,14 @@
 margin-right: 10px;
 }
 
-social{
+.social{
+@media screen and (min-width:1200px) {
     margin-top: 0;
     margin-right: 109px;
     justify-content: center;
     display:inline-block;
     align-items: baseline;
-}
+}}
 
 .social__text{
     

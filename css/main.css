@@ -235,16 +235,18 @@ ul {
   margin-right: 10px;
 }
 
-social {
-  margin-top: 0;
-  margin-right: 109px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: inline-block;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-top: 0;
+    margin-right: 109px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: inline-block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .social__text {
@@ -1069,7 +1071,20 @@ social {
   padding-bottom: 60px;
   background-color: var(--additional-color);
   width: 100%;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-tab-container {
@@ -1137,15 +1152,26 @@ social {
   color: var(--accent);
 }
 
-.address-box {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 1200px) {
+  .address-box {
+    margin-right: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 submit {
   margin-top: 0;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .submit-title {
@@ -1158,6 +1184,14 @@ submit {
 
 .footer-form {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .email {
@@ -1174,7 +1208,6 @@ submit {
   width: 200px;
   height: 50px;
   margin: auto;
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1191,6 +1224,18 @@ submit {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1199px) {
+  .submit-button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .submit-button {
+    margin-left: 12px;
+  }
 }
 
 .send-icon {
