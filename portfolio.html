@@ -17,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <header class="header">
@@ -63,6 +63,8 @@
       <section class="portfolio">
         <div class="container catalog-container">
           <h1 hidden>Catalog</h1>
+
+          <!--buttons--
           <ul class="catalog__list">
             <li class="catalog__item">
               <button type="button" class="catalog__all-btn">Все</button>
@@ -80,11 +82,42 @@
               <button type="button" class="catalog__btn">Маркетинг</button>
             </li>
           </ul>
+
+<!--photos-->
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img1.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project1_lg.jpg   1x,
+                        ./images/project1_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project1_md.jpg   1x,
+                        ./images/project1_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project1_sm.jpg   1x,
+                        ./images/project1_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project1_sm.jpg" alt="" />
+                  </picture>
 
                   <div class="overlay">
                     <p class="portfolio-text">
@@ -105,7 +138,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img2.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project2_lg.jpg   1x,
+                        ./images/project2_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project2_md.jpg   1x,
+                        ./images/project2_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project2_sm.jpg   1x,
+                        ./images/project2_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project2_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -127,7 +189,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img3.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project3_lg.jpg   1x,
+                        ./images/project3_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project3_md.jpg   1x,
+                        ./images/project3_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project3_sm.jpg   1x,
+                        ./images/project3_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project3_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -149,7 +240,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img4.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project4_lg.jpg   1x,
+                        ./images/project4_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project4_md.jpg   1x,
+                        ./images/project4_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project4_sm.jpg   1x,
+                        ./images/project4_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project4_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -160,7 +280,9 @@
                   </div>
                 </div>
                 <div class="portfolio__box">
-                  <h2 class="portfolio__subtitle">Проект <span lang="en">Prime</span></h2>
+                  <h2 class="portfolio__subtitle">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
                   <p class="portfolio__content">Маркетинг</p>
                 </div>
               </a>
@@ -169,7 +291,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img5.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project5_lg.jpg   1x,
+                        ./images/project5_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project5_md.jpg   1x,
+                        ./images/project5_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project5_sm.jpg   1x,
+                        ./images/project5_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project5_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -180,7 +331,9 @@
                   </div>
                 </div>
                 <div class="portfolio__box">
-                  <h2 class="portfolio__subtitle">Проект <span lang="en">Boxes</span></h2>
+                  <h2 class="portfolio__subtitle">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
                   <p class="portfolio__content">Приложение</p>
                 </div>
               </a>
@@ -189,7 +342,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img6.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project6_lg.jpg   1x,
+                        ./images/project6_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project6_md.jpg   1x,
+                        ./images/project6_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project6_sm.jpg   1x,
+                        ./images/project6_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project6_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -200,7 +382,9 @@
                   </div>
                 </div>
                 <div class="portfolio__box">
-                  <h2 class="portfolio__subtitle" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="portfolio__subtitle" lang="en">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="portfolio__content">Веб-сайт</p>
                 </div>
               </a>
@@ -209,7 +393,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img7.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project7_lg.jpg   1x,
+                        ./images/project7_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project7_md.jpg   1x,
+                        ./images/project7_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project7_sm.jpg   1x,
+                        ./images/project7_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project7_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -231,7 +444,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img8.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project8_lg.jpg   1x,
+                        ./images/project8_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project8_md.jpg   1x,
+                        ./images/project8_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project8_sm.jpg   1x,
+                        ./images/project8_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project8_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -242,7 +484,9 @@
                   </div>
                 </div>
                 <div class="portfolio__box">
-                  <h2 class="portfolio__subtitle">Проект <span lang="en">LAB</span></h2>
+                  <h2 class="portfolio__subtitle">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
                   <p class="portfolio__content">Маркетинг</p>
                 </div>
               </a>
@@ -251,7 +495,36 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img width="370" src="./images/portfolio-img9.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="min-width:1200px"
+                      srcset="
+                        ./images/project9_lg.jpg   1x,
+                        ./images/project9_lg2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="min-width:768px"
+                      srcset="
+                        ./images/project9_md.jpg   1x,
+                        ./images/project9_md2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="max-width:767px"
+                      srcset="
+                        ./images/project9_sm.jpg   1x,
+                        ./images/project9_sm2@.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img width="450" src="./images/project9_sm.jpg" alt="" />
+                  </picture>
                   <div class="overlay">
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -262,7 +535,9 @@
                   </div>
                 </div>
                 <div class="portfolio__box">
-                  <h2 class="portfolio__subtitle" lang="en">Growing Business</h2>
+                  <h2 class="portfolio__subtitle" lang="en">
+                    Growing Business
+                  </h2>
                   <p class="portfolio__content">Приложение</p>
                 </div>
               </a>
@@ -271,109 +546,105 @@
         </div>
       </section>
     </main>
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-container">
 
-        <div class="footer-tab-container">
-         
-        <div class="address-box">
-          
-<a href="" class="footer__logo"
->Web<span class="footer__colortext">Studio</span></a
->
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address__item">
-                <a href="" class="address__link" lang="en"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="address__item">
-                <a href="" class="address__link">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="social">
-          <p class="social__text">присоединяйтесь</p>
-          <ul class="social__list">
-            <li class="social__item">
-              <a
-                href=""
-                class="social__link--footer"
-                rel="noopener noreferrer"
-                aria-label="icon instagram"
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-tab-container">
+            <div class="address-box">
+              <a href="" class="footer__logo"
+                >Web<span class="footer__colortext">Studio</span></a
               >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              <address class="address">
+                <ul class="address__list">
+                  <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                  <li class="address__item">
+                    <a href="" class="address__link" lang="en"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a href="" class="address__link">+38 099 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="social">
+              <p class="social__text">присоединяйтесь</p>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a
+                    href=""
+                    class="social__link--footer"
+                    rel="noopener noreferrer"
+                    aria-label="icon instagram"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href=""
+                    class="social__link--footer"
+                    rel="noopener noreferrer"
+                    aria-label="icon twitter"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href=""
+                    class="social__link--footer"
+                    rel="noopener noreferrer"
+                    aria-label="icon facebook"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href=""
+                    class="social__link--footer"
+                    rel="noopener noreferrer"
+                    aria-label="icon linkedin"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="submit">
+            <strong class="submit-title">Подпишитесь на рассылку</strong>
+            <form class="footer-form">
+              <label for="email"></label>
+              <input
+                class="email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button class="submit-button" type="submit">
+                Подписаться
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                class="social__link--footer"
-                rel="noopener noreferrer"
-                aria-label="icon twitter"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                class="social__link--footer"
-                rel="noopener noreferrer"
-                aria-label="icon facebook"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                class="social__link--footer"
-                rel="noopener noreferrer"
-                aria-label="icon linkedin"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-        
-
-        <div class="submit">
-          <strong class="submit-title">Подпишитесь на рассылку</strong>
-          <form class="footer-form">
-            <label for="email"></label>
-            <input
-              class="email"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
-            <button class="submit-button" type="submit">
-              Подписаться
-              <svg class="send-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
