@@ -1389,13 +1389,27 @@ submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog__list {
+    margin-bottom: 50px;
+  }
 }
 
 .catalog__item {
@@ -1406,8 +1420,14 @@ submit {
   margin-right: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .catalog__item {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);

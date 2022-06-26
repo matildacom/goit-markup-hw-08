@@ -4,23 +4,36 @@
 }
 .catalog__list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;   
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;  
+    }
 }
 .catalog__item{
     margin-right: 8px;
-
-&:last-child{
+    &:last-child{
     margin-right: 0;
-}}
+}
+    @media screen and (max-width:767px) {
+    margin-bottom: 15px;   
+}
+}
 
 .portfolio__subtitle{
-    font-size: 18px;
+    font-size: 16px;
     line-height:2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
 }
+
 .portfolio__list{
     @media screen and (min-width:768px) {
     display: flex;
