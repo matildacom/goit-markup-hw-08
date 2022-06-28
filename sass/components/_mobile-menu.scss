@@ -1,7 +1,8 @@
 .menu-toggle{
+   // position: absolute;
+    //z-index: 20;
     display: inline-flex;
-    margin: 0;
-    padding: 0;
+    
     border: none;
     background-color: transparent;
     
@@ -22,18 +23,85 @@
     }
 
     .menu-container{
-        background-color: var(--text-color);
-        padding: 20px;
-        text-align: center;
-        width: 100%;
-        &.is-open {
+    
+       &.is-open {
             display: block;
         }
         @media screen and (max-width:767px) {
-        display: none;
+            position: absolute;
+            z-index: 900;
+            display: none;
+            background-color: var(--text-color);
+            padding: 40px;
+            width: 100%;
+        
+            justify-content: space-between;
+        
+            top: 100%;
+            left: 0;
         
         }
         @media screen and (min-width:768px) {
             display:none;   
         }}
-        
+
+    .menu__item{
+        margin-bottom: 32px;
+    }
+
+   .menu__link{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(33, 33, 33, 1);
+   } 
+   
+   .menu__contacts{
+   
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 500;
+    color: rgba(33, 150, 243, 1);
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function:var(--timing-function) ;
+
+&:hover,
+&:focus {
+    color: var(--accent);
+}}
+.menu__link.current{
+    color: var(--accent);}
+
+   .menu__mail{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(117, 117, 117, 1);
+   }
+    .menu__social-list{
+    margin-top: 32px;
+    display: inline-flex;
+   
+}
+   .menu__socials{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(33, 150, 243, 1);
+   }
+   .menu__social-item{
+    position: relative;
+    margin-right: 20px;
+   }
+   .menu__social-item::before {
+       content: "";
+       position: absolute;
+       right:-15%;
+       
+       display: flex;
+       width: 2px;
+       height: 15px;
+    background-color: rgba(33, 33, 33, 0.2);
+   }

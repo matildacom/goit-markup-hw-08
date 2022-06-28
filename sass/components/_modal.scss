@@ -17,11 +17,13 @@
 .modal{
     display: block;
     text-align: center;
-    padding: 40px;  
+    padding: 40px; 
+    margin-top: 100px; 
     min-width: 450px;
     min-height: 609px;
     background-color:rgba(255, 255, 255, 1) ;
     position: absolute;
+    
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);

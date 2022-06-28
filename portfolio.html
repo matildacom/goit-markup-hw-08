@@ -22,7 +22,6 @@
   <body class="page">
     <header class="header">
       <div class="container header__container">
-        <!--logo-->
         <a href="" lang="en" class="header__logo"
           >Web<span class="header__colortext">Studio</span></a
         >
@@ -38,7 +37,83 @@
               <a href="" class="navigation__link">Контакты</a>
             </li>
           </ul>
+          <button
+            type="button"
+            class="menu-toggle is-open"
+            aria-expanded="false"
+            data-mobile-menu__button
+          >
+            <svg
+              class="menu__icon"
+              width="40"
+              height="40"
+              aria-label="переключатель меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+
+          <!--menu-container-->
+          <div class="menu-container is-open" data-menu>
+            <ul class="menu__nav">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link current">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="menu__contacts">
+                <li class="menu__item">
+                  <a href="tel:+380961111111" class="menu__contacts"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="mailto:info@devstudio.com" class="menu__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu__social-list">
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
+        <!--contacts-->
         <ul class="contacts">
           <li class="contacts__item">
             <a href="" class="contacts__link">
@@ -59,6 +134,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="portfolio">
         <div class="container catalog-container">
@@ -83,7 +159,7 @@
             </li>
           </ul>
 
-<!--photos-->
+          <!--photos-->
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
