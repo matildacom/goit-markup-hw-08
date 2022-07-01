@@ -59,9 +59,10 @@
             opacity: 1;
             pointer-events: all;
             
-           display: flex;
+           //display: flex;
            flex-wrap: wrap;
            justify-content: space-between;
+           flex-direction: column;
 
             @media screen and (min-width:768px) {
                     display: none;}
