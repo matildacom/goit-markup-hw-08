@@ -648,11 +648,28 @@ ul {
 }
 
 .menu-toggle {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  position: fixed;
+  z-index: 999;
+  top: 10px;
+  right: 25px;
   border: none;
   background-color: transparent;
+  fill: #212121;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  fill: var(--accent);
+}
+
+.menu-toggle:hover {
+  fill: var(--accent);
 }
 
 @media screen and (min-width: 768px) {
@@ -676,30 +693,39 @@ ul {
 }
 
 .menu-container {
+  background-color: var(--text-color);
+  position: fixed;
   z-index: 900;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .menu-container.is-open {
-  display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-container {
-    position: absolute;
-    display: none;
-    background-color: var(--text-color);
-    padding: 40px;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    top: 100%;
-    left: 0;
-  }
+  opacity: 1;
+  pointer-events: all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .menu-container.is-open {
     display: none;
   }
 }
@@ -787,8 +813,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-flex;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
