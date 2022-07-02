@@ -43,7 +43,7 @@
 
           <button
             type="button"
-            class="menu-toggle is-open"
+            class="menu-toggle js-open-menu"
             aria-expanded="false"
             data-mobile-menu__button
           >
@@ -54,17 +54,29 @@
               aria-label="переключатель меню"
             >
               <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-cross"
-              ></use>
-              <use
                 class="icon-menu"
                 href="./images/symbol-defs.svg#icon-menu"
               ></use>
-            </svg></button
-          ><!--menu-container-->
+            </svg>
+          </button>
+          <!--menu-container-->
 
-          <div class="menu-container " data-menu>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button
+              class="menu-toggle js-close-menu"
+              type="button"
+              aria-expanded="false"
+              data-mobile-menu__button
+            >
+              <svg
+                class="menu__icon"
+                height="24"
+                width="24"
+                aria-label="переключатель меню"
+              >
+                <use href="./images/symbol-defs.svg#icon-cross"></use>
+              </svg>
+            </button>
             <ul class="menu__nav">
               <li class="menu__item">
                 <a href="" class="menu__link current">Студия</a>

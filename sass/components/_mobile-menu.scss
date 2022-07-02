@@ -1,6 +1,6 @@
 .menu-toggle{
-    position: fixed;
-    z-index: 999;
+    position: absolute;
+    //z-index: 999;
     top: 10px;
     right: 25px;
     
@@ -59,8 +59,8 @@
             opacity: 1;
             pointer-events: all;
             
-           //display: flex;
-           flex-wrap: wrap;
+           display: flex;
+           //flex-wrap: wrap;
            justify-content: space-between;
            flex-direction: column;
 

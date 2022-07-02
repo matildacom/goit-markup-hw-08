@@ -648,8 +648,7 @@ ul {
 }
 
 .menu-toggle {
-  position: fixed;
-  z-index: 999;
+  position: absolute;
   top: 10px;
   right: 25px;
   border: none;
@@ -714,8 +713,9 @@ ul {
 .menu-container.is-open {
   opacity: 1;
   pointer-events: all;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
