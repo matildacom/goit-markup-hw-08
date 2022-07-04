@@ -1588,7 +1588,6 @@ submit {
 }
 
 .portfolio__item {
-  width: 450px;
   aspect-ratio: auto 450 / 294;
   margin-bottom: 30px;
 }
